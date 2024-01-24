@@ -52,13 +52,13 @@ int main() {
     int index = exponential_search(nums, num, size);
     
     if ((index == 0) && (!flag)) {
-        cout << "-1" << endl;
+        cout << "0 1" << endl;
     } else if (index == 0) {
         cout << index << " " << index + 1 << endl;
     } else if (index == size - 1) {
         cout << index - 1 << " " << index << endl;
     } else {
-        cout << index << " " << index + 1 << endl;
+        cout << index - 1 << " " << index + 1 << endl;
     }
     return 0;
 }
